@@ -21,19 +21,19 @@
     <header>
       <div class="navbar navbar-default">
         <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed col-xs-2" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <div class="navbar-header ">
+            <button type="button" class="navbar-toggle collapsed col-xs-2 col-sm-2" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand col-xs-6" href="#">
+            <a class="navbar-brand col-xs-6 col-sm-6" href="#">
                 <img src="img/logo.png" alt="logo">
             </a>
           </div>
         </div>
-    </div>
+      </div>
         <nav>
             <div class="logo col-lg-2">
               <img src="img/logo.png" alt="logo">
@@ -71,11 +71,244 @@
             </ul>
       
         </nav>
-        <div id="jumbotron ">
-          <div class="col-lg-6">
+        <div id="jumbotron">
+          <div class="col-lg-4">
+            <h1>The simplest cloud platform for developers & teams</h1>
+            <p>Deploy, manage and scale cloud applications faster and more efficiently on Digital Ocean. We make manaigng infrastructure easy for teams and businesses, whether you're running one virtual machine or ten thousand</p>
           </div>
-          <div class="col-lg-6"></div>
+          <div id="login" class="col-lg-6 col-lg-offset-1">
+             <h1>Deploy your app in seconds <span>Get started now</span></h1>
+             
+          <form>
+            <div class="form-group"> 
+              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <a id="btn_create" class="btn btn-lg btn_login" href="#" role="button">Create your account</a>
+            <a id="btn_google" class="btn btn-lg btn_login" href="#" role="button"><img src="img/google-icon.png" alt="">
+                Singn up width google</a>
+          </form>
+          <p>By signing up you agree to the <a href="#">Terms af Service</a>.</p>
+          </div>
         </div>
     </header>
+    <main>
+      <div class="partner">
+        <div class="agency col-lg-2">
+          <img src="img/docker.svg" alt="">
+        </div>
+        <div class="agency col-lg-2">
+          <img src="img/gitlab.svg" alt="">
+        </div>
+        <div class="agency col-lg-2">
+          <img src="img/slack.svg" alt="">
+        </div>
+        <div class="agency col-lg-2">
+          <img src="img/hashicorp.svg" alt="">
+        </div>
+        <div class="agency col-lg-2">
+          <img src="img/hashicorp.svg" alt="">
+        </div>
+        <div class="agency col-lg-2">
+          <img src="img/splunk.svg" alt="">
+        </div>
+      </div>
+
+      <div class="service conteiner">
+        <div class="title col-lg-8 col-lg-offset-2">
+          <h1>Deploy and scale seamlessly</h1>
+          <h3>Our optimized configuration proces saves your team time when runnung and scaling distributed applications, Al & machine learning workloads, hosted services, client websites, or CI/CD enviroments.</h3>
+        </div>
+      <div class="menu col-lg-1 col-lg-offset-2">
+        <ul>
+          <li>Deploy</li>
+          <li>Manage</li>
+          <li>Secure</li>
+          <li>Scale</li>
+          <li>Monitor</li>
+        </ul>
+      </div>
+      <div class="info_section col-lg-8 col-lg-offset-1">
+        <div class="info col-lg-5">
+          <div class="icon">
+            <img src="img/cluster-deploy.svg" alt="">
+          </div>
+          <h4>Cluster deployments</h4>
+          <p>Provision multiple Droplets (virtual
+            machines) in seconds with our control
+            panel, CLI, or directly against our API.</p>
+        </div>
+        <div class="info col-lg-5">
+          <div class="icon">
+            <img src="img/optimized-compute.svg" alt="">
+          </div>
+          <h4>Optimized compute types</h4>
+          <p>Get the compute resources you need whith Standard or Optimized Droplets.</p>
+        </div>
+        <div class="info col-lg-5">
+          <div class="icon">
+            <img src="img/one-click.svg" alt="">
+          </div>
+          <h4>One-click apps</h4>
+          <p>Skip the install and configuration process whith pre-built open source images supporting Rails,Cassandra,Doker, and more.</p>
+        </div>
+        <div class="info col-lg-5">
+          <div class="icon">
+            <img src="img/global.svg" alt="">
+          </div>
+          <h4>Global availability</h4>
+          <p>Deploy to any of our data center regions around the world.</p>
+        </div>
+      </div>
+      </div>
+
+      <div class="designed">
+        <div class="title">
+          <h1>Designed for developers</h1>
+          <p>Build more and spend less time managing your infastructure whith our easy-to-use control panel and API</p>
+        </div>
+
+        <div class="scrol_photo conteiner">
+          <div class="before col-lg-2 col-lg-offset-1 text-right">
+            <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+          </div>
+          <div class="gallery col-lg-6">
+            <img src="img/slide.jpg" alt="">
+          </div>
+          <div class="after col-lg-2">
+            <span class="glyphicon glyphicon-menu-right text-left" aria-hidden="true"></span>
+          </div>
+          <div class="loading_bar col-lg-4 col-lg-offset-4">
+            <h3>Create compute servers in 55 seconds or less.</h3>
+            <div class="loading_bar_circle">
+              <span class="circle active"></span>
+              <span class="circle"></span>
+              <span class="circle"></span>
+              <span class="circle"></span>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="future_business contenent">
+        <div class="box_business col-lg-4">
+          <div class="ico">
+            <img src="img/pred-pricing.svg" alt="pred-pricing">
+          </div>
+          <h1>Pred pricing</h1>
+          <p>Leave complex pricing structures behind. Always
+            know what you'll pay per month with a flat,
+            industry-leading pricing structure.</p>
+          <a href="">Pricing<span class="glyphicon glyphicon-menu-right text-left" aria-hidden="true"></span></a>
+        </div>
+        <div class="box_business col-lg-4">
+          <div class="ico">
+            <img src="img/world-class.svg" alt="world-class">
+          </div>
+          <h1>World class</h1>
+          <p>Free round-the-clock technical support for all customers. You?ll feel the love.</p>
+          <a href="">Support<span class="glyphicon glyphicon-menu-right text-left" aria-hidden="true"></span></a>
+        </div>
+        <div class="box_business col-lg-4">
+          <div class="ico">
+            <img src="img/reliable-platform.svg" alt="reliable-platform">
+          </div>
+          <h1>Reliable platform</h1>
+          <p>More than 100,000 developer teams worldwide
+            trust DigitalOcean to support their business with
+            99.99% uptime SLA for all services.</p>
+          <a href="">Security<span class="glyphicon glyphicon-menu-right text-left" aria-hidden="true"></span></a>
+        </div>
+      </div>
+
+      <div class="service_customer container">
+        <h1>Service your customers around the world from 12 regions.</h1>
+
+        <div class="table_service_customer col-lg-4 col-lg-offset-1">
+          <ul>
+            <li>
+              <p><span>ams2</span>Amsterdam, Netherlands<a href="#">Test speed &gt;</a></p>
+            </li>
+            <li>
+              <p><span>ams3</span>Amsterdam, Netherlands <a href="#">Test speed &gt;</a></p>
+            </li>
+            <li>
+              <p><span>blr1</span>Bangalore, India <a href="#">Test speed &gt;</a></p>
+            </li>
+            <li>
+              <p><span>fra1</span>Frankfurt, German <a href="#">Test speed &gt;</a></p>
+            </li>
+            <li>
+              <p><span>lon1</span>London, UK <a href="#">Test speed &gt;</a></p>
+            </li>
+            <li>
+              <p><span>nyc1</span>New York, USA <a href="#">Test speed &gt;</a></p>
+            </li>
+          </ul>
+        </div>
+        <div class="table_service_customer col-lg-4 col-lg-offset-1">
+          <ul>
+            <li>
+              <p><span>ams2</span>Amsterdam, Netherlands<a href="#">Test speed &gt;</a></p>
+            </li>
+            <li>
+              <p><span>ams3</span>Amsterdam, Netherlands <a href="#">Test speed &gt;</a></p>
+            </li>
+            <li>
+              <p><span>blr1</span>Bangalore, India <a href="#">Test speed &gt;</a></p>
+            </li>
+            <li>
+              <p><span>fra1</span>Frankfurt, German <a href="#">Test speed &gt;</a></p>
+            </li>
+            <li>
+              <p><span>lon1</span>London, UK <a href="#">Test speed &gt;</a></p>
+            </li>
+            <li>
+              <p><span>nyc1</span>New York, USA <a href="#">Test speed &gt;</a></p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="development">
+        <div class="title">
+          <h1>Designed for developers</h1>
+          <p>Build more and spend less time managing your infastructure whith our easy-to-use control panel and API</p>
+        </div>
+
+        <div class="scrol_photo conteiner">
+          <div class="before col-lg-2 col-lg-offset-1 text-right">
+            <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+          </div>
+          <div class="gallery col-lg-6">
+            <img src="img/slide.jpg"alt="">
+          </div>
+          <div class="after col-lg-2">
+            <span class="glyphicon glyphicon-menu-right text-left" aria-hidden="true"></span>
+          </div>
+          <div class="loading_bar col-lg-4 col-lg-offset-4">
+            <h3>Create compute servers in 55 seconds or less.</h3>
+            <div class="loading_bar_circle">
+              <span class="circle active"></span>
+              <span class="circle"></span>
+              <span class="circle"></span>
+              <span class="circle"></span>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+    </main>
+    <footer>
+      <div class="footer_top">
+        <h1>Get started now</h1>
+        <a class="btn btn_white" href="">Create your account</a>
+      </div>
+    </footer>
+
+    
 </body>
 </html>
