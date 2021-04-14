@@ -31,7 +31,6 @@ li {
 }
 .gallery {
     display: inline-block;
-    margin: 0 auto;
 }
 
 .after,
@@ -372,6 +371,9 @@ nav>.logo {
     .navbar-toggle {
         width: 45px;
     }
+    .gallery {
+        margin: 0 auto;
+    }
 
 }
 
@@ -383,4 +385,36 @@ nav>.logo {
         width: 45px;
     }
 
+    h1 {
+        font-size: 30px;
+    }
+
+
+    #jumbotron h1 {
+        font-size: 35px;
+    }
+    .partner h1 {
+        font-size: 20px;
+    }
+    .after,
+    .before {
+        display: none;
+    }
+    .loading_bar h3 {
+        font-size: 10px;
+    }
+    .circle {
+        width: 10px;
+        height: 10px;
+    }
+    .table_service_customer p {
+        font-size: 10px;
+    }
+    .table_service_customer span {
+        margin: 0;
+    }
+
+    .ico_social a {
+        margin-left: 10px;
+    }
 }
