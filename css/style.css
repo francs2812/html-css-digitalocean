@@ -29,13 +29,29 @@ li {
     width: 100%;
 }
 .gallery {
+    margin: 60px 40px;
+    text-align: center;
     display: inline-block;
+    background-color: white;
+}
+.gallery h3 {
+    font-weight: 600;
+}
+.gallery h3 span {
+    font-weight: 500;
+    display: block;
+}
+
+.gallery a {
+    font-size: 24px;
+    font-weight: 600;
 }
 
 .after,
 .before {
     font-size: 50px;
-    line-height: 600px;
+    height: 50px;
+    line-height: 350px;
 }
 .loading_bar h3 {
     font-size: 20px;
@@ -135,6 +151,7 @@ li {
     height: 150px;
 }
 .partner h1 {
+    font-size: 20px;
     margin: 30px 0;
     text-transform: uppercase;
     color: #6F7B97;
@@ -158,7 +175,8 @@ li {
 }
 
 .info_section .info {
-    margin-bottom: 30px;
+    margin: 30px 0;
+    height: 200px;
 }
 
 .info_section .info .icon {
@@ -169,6 +187,7 @@ li {
 
 .designed {
     width: 100%;
+    padding: 100px;
     background-color: #F3F5F9;
 }
 
@@ -178,6 +197,7 @@ li {
     width: 100%;
     padding: 50px;
     margin-bottom: 50px;
+    display: inline-block;
 }
 
 .ico {
@@ -207,24 +227,32 @@ li {
     background-color: #0043C2;
 }
 .table_service_customer p {
+    width: 200px;
+    text-align: left;
+    display: inline-block;
+    float: left;
+}
+.table_service_customer li{
+    list-style: none;
+    display: inline-block;
+    width: 100%;
     font-size: 15px;
     height: 80px;
     color: white;
     border-bottom: 1px solid white;
 }
-.table_service_customer li{
-    list-style: none;
-}
 .table_service_customer span {
+    width: 60px;
     float: left;
     font-weight: 600;
     text-transform: uppercase;
-    margin-right: 50px;
+    margin-right: 10px;
 }
 
 .table_service_customer a {
-    float: right;
-    margin-right: 30px;
+    width: 90px;
+    float: left;
+    display: inline-block;
 }
 
 /* footer top */
@@ -377,15 +405,6 @@ li {
     /* /PARTE IN PROVA */
 
 }
-
-@media (min-width: 1200px) {
-
-    .gallery {
-        margin: 0 auto;
-    }
-
-}
-
 @media (max-width: 767px) {
 
     h1 {
