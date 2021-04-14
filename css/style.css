@@ -179,7 +179,7 @@ nav>.logo {
     margin-bottom: 50px;
 }
 
-.box_business .ico {
+.ico {
     width: 50px;
     display: block;
 } 
@@ -232,8 +232,51 @@ nav>.logo {
 .footer_top h1 {
     margin-bottom: 20px;
 }
+.footer_bottom h3 {
+    color: #8993A8;
+}
+.footer_bottom p {
+    color: #5A6887;
+}
 
+.footer_bottom {
+    width: 100%;
+    padding: 50px;
+    display: inline-block;
+    background-color: #031C4E;
+}
+.ico_social a {
+        height: 35px;
+        font-size: 30px;
+        text-align: center;
+        line-height: 35px;
+        margin-left: 15px;
+        color: #7A859D;
+}
+.ico_social .fa-facebook {
+        width: 35px;
+        height: 35px;
+        font-size: 30px;
+        border-radius: 5px;
+        text-align: center;
+        line-height: 35px;
+        color: #031C4E;
+        background-color: #7A859D;
+}
 
+.footer_bottom .indice li:first-child {
+    height: 40px;
+    font-size: 30px;
+    font-weight: 600;
+}
+.footer_bottom .indice li:first-child a {
+    color: white;
+}
+.footer_bottom .indice li {
+    height: 30px;
+    list-style: none;
+    color: #A6ADBD;
+}
 
 
 
