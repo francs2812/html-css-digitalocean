@@ -1,10 +1,7 @@
 
 /* COMMON */
 
-.box80 {
-    width: 80%;
-    margin: 0 auto;
-}
+
 img:not(#btn_google>img, .navbar-brand>img) {
     width: 100%;
 }
@@ -33,7 +30,7 @@ li {
     display: inline-block;
 }
 .gallery {
-    width: 35%;
+    width: 80%;
     margin: 0 auto;
     text-align: center;
     background-color: #F3F5F9;
@@ -42,10 +39,24 @@ li {
     display: inline-block;
     background-color: white;
 }
+.development .box_image {
+    padding: 70px 15px;
+    display: inline-block;
+    background-color: white;
+}
+.box_image h1 {
+    font-size: 23px;
+}
+.after, .before {
+    font-size: 50px;
+    line-height: 100%;
+    display: inline-block;
+}
 .gallery .box_image {
-    width: 85% ;
+    width: 70% ;
 }
 .gallery h3 {
+    font-size: 15px;
     font-weight: 600;
 }
 .gallery h3 span {
@@ -54,17 +65,10 @@ li {
 }
 
 .gallery a {
-    font-size: 24px;
+    font-size: 15px;
     font-weight: 600;
 }
 
-.after,
-.before {
-    font-size: 50px;
-    height: 50px;
-    line-height: 100%;
-    display: inline-block;
-}
 
 .circle {
     content: "";
@@ -86,6 +90,10 @@ li {
 }
 .circle.active {
     background-color: #579AFF;
+}
+
+.not_underline {
+    border-bottom: 0 !important;
 }
 
 /* HEADER */
@@ -118,7 +126,7 @@ li {
     padding: 50px;
 }
 #jumbotron h1{
-    font-size: 75px;
+    font-size: 55px;
     font-weight: 700;
 }
 #login h1{
@@ -127,8 +135,10 @@ li {
 }
 #login>p {
     font-size: 14px !important;
-    text-decoration: underline;
     text-align: center;
+}
+#login>p>a {
+    text-decoration: underline;
 }
 
 #jumbotron p {
@@ -155,10 +165,12 @@ li {
 #btn_google {
     background-color: white;
     color: black;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
 #btn_google img {
     height: 41px;
+    margin-right: 10px;
     float: left;
 }
 
@@ -203,6 +215,9 @@ li {
 .service h1 {
     font-size: 55px;
     font-weight: 600;
+}
+.service h3 {
+    color: #6F7B97; 
 }
 .menu {
     border-left: 2px solid #75809A;
@@ -415,9 +430,45 @@ li {
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
     
+    .navbar-header {
+    float: none;
+    }
+    .navbar-toggle {
+    display: block;
+    }
+    .navbar-collapse {
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-collapse.collapse {
+    display: none!important;
+    }
+    .navbar-nav {
+    float: none!important;
+    margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+    float: none;
+    }
+    .navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    }
+    .navbar-text {
+    float: none;
+    margin: 15px 0;
+    }
+    /* since 3.1.0 */
+    .navbar-collapse.collapse.in {
+    display: block!important;
+    }
+    .collapsing {
+    overflow: hidden!important;
+    }
+    
     .after, .before {
         font-size: 50px;
-        line-height: 230px;
+        line-height: 100%;
     }
     .loading_bar h3 {
         font-size: 15px;
@@ -428,12 +479,7 @@ li {
         height: 10px;
     }
 
-    .table_service_customer p {
-        font-size: 15px;
-        height: 80px;
-        color: white;
-        border-bottom: 1px solid white;
-    }
+ 
     .table_service_customer li{
         list-style: none;
     }
@@ -448,43 +494,71 @@ li {
         float: right;
         margin-right: 30px;
     }
-    /* PARTE IN PROVA */
 
-    .navbar-header {
-        float: none;
-        }
-        .navbar-toggle {
-        display: block;
-        }
-        .navbar-collapse {
-        border-top: 1px solid transparent;
-        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
-        }
-        .navbar-collapse.collapse {
-        display: none!important;
-        }
-        .navbar-nav {
-        float: none!important;
-        margin: 7.5px -15px;
-        }
-        .navbar-nav>li {
-        float: none;
-        }
-        .navbar-nav>li>a {
-        padding-top: 10px;
-        padding-bottom: 10px;
-        }
-        .navbar-text {
-        float: none;
+    /* PARTE IN PROVA */
+    #jumbotron h1 {
+        font-size: 30px;
+        font-weight: 700;
+    }
+    #jumbotron p {
+        font-size: 20px;
+    }
+    #login h1 {
+        font-size: 20px !important;
+        margin-block: 10px;
+    }
+    .btn-group-lg > .btn, .btn-lg {
+        font-size: 15px;
+    }
+    #btn_google img {
+        height: 20px;
+        float: left;
+    }
+    .agency img {
+        height: 70px;
+    }
+    .partner h1 {
+        font-size: 15px;
         margin: 15px 0;
-        }
-        /* since 3.1.0 */
-        .navbar-collapse.collapse.in {
-        display: block!important;
-        }
-        .collapsing {
-        overflow: hidden!important;
-        }
+        text-transform: uppercase;
+        color: #6F7B97;
+        font-weight: 600;
+    }
+    .partner a {
+        font-size: 15px;
+    }
+
+    .service h1 {
+        font-size: 34px;
+        font-weight: 600;
+    }
+    .service h3 {
+        font-size: 20px;
+    }
+    .service .menu  ul {
+        margin-top: 0;
+        margin-bottom: 10px;
+        display: inline-block;
+        padding: 10px;
+    }
+    .menu li {
+        height: 55px;
+        font-size: 25px;
+        color: #75809A;
+    }
+    .designed > .title > h1 {
+        font-size: 30px;
+    }
+    .designed .title p {
+        font-size: 18px;
+    }
+    .development .title h1 {
+        font-size: 35px;
+    }
+    .development .gallery {
+        padding: 0px 30px;
+    }
+
 
     /* /PARTE IN PROVA */
 
@@ -524,3 +598,11 @@ li {
         margin-left: 10px;
     }
 }
+@media (min-width: @screen-lg-min) {
+    .box80 {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+}
+
